@@ -4,6 +4,9 @@
     font-family: 'josefin sans' , sans-serif;
     box-sizing: border-box;
 
+   html{
+    scroll-behavior: smooth;
+   } 
 }   .ggg{
     height: 100vh;
     width: 100%;
@@ -105,7 +108,7 @@ h4{
     top: 6px;
     right: 6px;
 }
-.about{
+#about{
       background-color: #191919;
     flex-direction: column;
     box-sizing: border-box;
@@ -113,12 +116,19 @@ h4{
     margin: 50px;
 }
 .headings{
-    color: white;
+    color: black;
     font-family: century;
     font-size: 3rem;
     text-align: center;
     margin: 40px 0px;
 }
+  .aboutt{
+    color: white;
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+  }
 .pic{
     display: flex;
   }
@@ -184,14 +194,178 @@ button{
 }
 button:hover{
     background-color: transparent;
-    border: 2px solid #f9004d;
+    border: 2px solid ;
     cursor: pointer;
 }
-#services{
-    background-color: black;
-    color: white;
+#project{
+    
+    color: #000;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
-.row{}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #f9004d 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: o o 20px rgb(255, 45, 45);}
+     #skill {
+        margin: auto;
+        width: 1100px;
+        padding: 100px 0;
+    }
+    .cont{
+        display: flex;
+        align-items: center;
+    }
+    .left{
+        width: 50%;
+    }
+    .left p{
+        font-size: 18px;
+      margin: 15px 0;
+    }
+    .left a{
+        background-color:#f9004d ;
+        color: white;
+        padding: 8px 16px;
+        border: 2px solid #f9004d;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .left a:hover{
+        background-color: transparent;
+        color: #f9004d;
+    }
+.right{
+    flex: 1;
+    margin-left: 30px;
+}
+.right .line{
+    margin-bottom: 15px;
+}
+.right .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .info span{
+font-weight: 500;
+font-size: 18px;
+}
+.right .bars{
+    background-color: lightgray;
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+.right .bars::before{
+    content:'';
+    position: absolute;
+    height: 100%;
+    background-color: #f9004d;
+}
+.right .html::before{
+width: 90%;
+}
+.right .css::before{
+    width: 70%;
+ }
+.right .php::before{
+     width: 0%;
+ }
+.right .js::before{
+     width: 50%;
+}
+
+
+
+
+
+
+
+
+#contact{
+    background-color: #191919;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 80px;
+    margin: 50px;
+    color: white;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+} .contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:#ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 10px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+}
+
